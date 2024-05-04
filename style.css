@@ -1,0 +1,219 @@
+@font-face{
+    font-family: "HankenGrotestBold";
+    src: url(./assets/fonts/static/HankenGrotesk-Bold.ttf);
+}
+@font-face{
+    font-family: "HankenGrotestExtraBold";
+    src: url(./assets/fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+@font-face{
+    font-family: "HankenGrotestMedium";
+    src: url(./assets/fonts/static/HankenGrotesk-Medium.ttf);
+}
+@font-face{
+    font-family: "HankenGrotestVariable";
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    /* border: 1px solid #000; */
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.178);
+    border-radius: 15px;
+}
+.left-section{
+    /* border: 1px solid red; */
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 1.25rem;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 15px;
+    position: relative;
+}
+.result{
+    font-family: "HankenGrotestVariable";
+    font-weight: 600;
+    font-size: 1.25rem;
+    color :hsl(241, 100%, 89%);
+
+}
+.score{
+    /* border: 1px solid rgb(71, 16, 172); */
+    background-image :linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)) ;
+    margin-top: 1.25rem;
+    padding: 1.5rem;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.score h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 3.5rem;
+    /* margin: 0.5rem; */
+    font-family: "HankenGrotestExtraBold" , sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+.score p{
+    font-size: 1rem;
+    color :hsl(241, 100%, 89%);
+    margin-top: -1rem;
+    font-family: "HankenGrotestMedium";
+    font-weight: 500;
+    font-size: 16px;
+}
+.desc{
+    margin-top: auto;
+}
+.desc h2{
+    color:hsl(0, 0%, 100%);
+    font-family:"HankenGrotestBold" , sans-serif ;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.desc p{
+    color:hsl(241, 100%, 89%);
+    font-family:"HankenGrotestMedium" , sans-serif ;
+    font-weight: 500;
+}
+
+.right-section{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 1.25rem;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+}
+.summary{
+    text-align: left;
+    font-family:  "HankenGrotestBold";
+    font-weight: 700;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    /* align-self:  start; */
+}
+.skills{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 80%;
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+    padding-left: 8px;
+    padding-right: 8px;
+    /* background-color: gray; */
+    border-radius: 15px;
+}
+.reaction{
+    background-color: hsla(0, 33%, 96%, 0.911);
+    color: hsl(0, 100%, 67%);
+    font-size: 18px;
+    font-weight: 600; 
+    font-family:"HankenGrotestVariable";
+}
+
+.memory{
+    background-color:hsla(38, 81%, 94%, 0.966);
+    color: hsl(39, 100%, 56%);
+    font-size: 18px;
+    font-weight: 600; 
+    font-family:"HankenGrotestVariable";
+
+}
+.verbal{
+    background-color:hsl(167, 70%, 89%);
+    color: hsl(166, 100%, 37%);
+    font-size: 18px;
+    font-weight: 600; 
+    font-family:"HankenGrotestVariable";
+
+}
+.visual{
+    background-color: hsl(233, 63%, 92%);
+    color: hsl(234, 85%, 45%);
+    font-size: 18px;
+    font-weight: 600;
+    font-family:"HankenGrotestVariable";
+
+}
+.skill{
+    margin-left: 0.5rem;
+}
+.marks{
+    margin-left: auto;
+}
+.marks p{
+    color: black;
+}
+
+.continue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 15px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    cursor: pointer;
+    font-family:"HankenGrotestVariable";
+   
+}
+.outof{
+    color: hsl(225, 6%, 42%);
+}
+.continue:hover{
+    background-image:  linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+@media (max-width: 375px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        box-shadow: none;
+        margin-top: -15px;
+        border-radius:20px ;
+    }
+    .left-section, .right-section{
+        max-width: 100%
+
+    }
+   
+}
+@media (max-width: 450px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        box-shadow: none;
+        margin-top: -15px;
+        border-radius:20px ;
+    }
+    .left-section, .right-section{
+        max-width: 100%
+
+    }
+   
+}
